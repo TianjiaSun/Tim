@@ -158,8 +158,14 @@
                 ng-init="expand_product=false;">
           <div  ng-class="{
                 'app_content': expand_product===false, 
-                'app_content_active_300_200': expand_product===true
-                }"></div>
+                'app_content_active_500_250': expand_product===true
+                }">
+            <!-- product plugview -->
+              <iframe class="Products_plugview_container fadeIn fadeIn-50ms" frameBorder="0"
+                src="http://tianjiasun.github.io/Products_plugview/app/index.html#/open=1"></iframe>
+              <iframe class="Products_plugview_container fadeIn fadeIn-50ms" frameBorder="0"
+                src="http://tianjiasun.github.io/Products_plugview/app/index.html#/open=2"></iframe>
+          </div>
           <div  ng-class="{
                 'app_handler': expand_product===false, 
                 'app_handler_active': expand_product===true
@@ -176,8 +182,10 @@
                 ng-init="expand_calendar=false;">
           <div  ng-class="{
                 'app_content': expand_calendar===false, 
-                'app_content_active_300_200': expand_calendar===true
-                }"></div>
+                'app_content_active_350_320': expand_calendar===true
+                }">
+            <img class="calendar_img" src="img/calendar_pic.png"/>
+          </div>
           <div  ng-class="{
                 'app_handler': expand_calendar===false, 
                 'app_handler_active': expand_calendar===true
