@@ -134,11 +134,13 @@
                 ng-init="expand_video=false;">
           <div  ng-class="{
                 'app_content': expand_video===false, 
-                'app_content_active_800_400': expand_video===true
+                'app_content_active_400_260': expand_video===true
                 }">
             <div class="webcam_container">
               <webcam></webcam>
+              <div class="call_bn">Call Thomas</div>
             </div>
+            <div class="add_cam"></div>
           </div>
           <div  ng-class="{
                 'app_handler': expand_video===false, 
