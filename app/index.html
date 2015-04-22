@@ -23,15 +23,24 @@
     <div class="main_navigator_h1">CHANNELS</div>
       <div class="main_navigator_h2">GAUSIAN-All</div>
       <div class="main_navigator_h2">Design & UI</div>
-      <div class="main_navigator_h2">Debug</div>
 
     <div class="main_navigator_h1">PEOPLE</div>
-      <div class="main_navigator_h2 h2_selected">Thomas Sun</div>
-      <div class="main_navigator_h2">Jason Yang</div>
-      <div class="main_navigator_h2">Ruby Li</div>
-      <div class="main_navigator_h2">Eason Chen</div>
-      <div class="main_navigator_h2">Jhonason Lee</div>
-
+      <div  ng-class="{
+                'main_navigator_h2': true, 
+                'h2_selected': thomas===true
+                }" 
+            ng-click="thomas=true;steve=false; 
+            expand_github=false; expand_bug=false; expand_todo=false; expand_video=false; expand_product=false; expand_calendar=false;"
+            ng-init="thomas=false;">Thomas Sun
+      </div>
+      <div  ng-class="{
+                'main_navigator_h2': true, 
+                'h2_selected': steve===true
+                }" 
+            ng-click="thomas=false;steve=true;
+            expand_github=false; expand_bug=false; expand_todo=false; expand_video=false; expand_product=false; expand_calendar=false;"
+            ng-init="steve=true;">Steve Jobs
+      </div>
     <div class="main_navigator_h1">GROUPS</div>
   </div>
 
@@ -54,6 +63,7 @@
                 }"></div>
           <img  class="app_img" src="img/github.png" ng-click="expand_github=!expand_github; 
                 expand_bug=false; expand_todo=false; expand_video=false; expand_product=false; expand_calendar=false;"/>
+          <div  class="app_notification" ng-show="steve===true">2</div>
         </div>
 
 
@@ -84,7 +94,7 @@
                 }"></div>
           <img  class="app_img" src="img/bug.png" ng-click="expand_bug=!expand_bug;
                 expand_github=false; expand_todo=false; expand_video=false; expand_product=false; expand_calendar=false;"/>
-          <div  class="app_notification">1</div>
+          <div  class="app_notification" ng-show="thomas===true">1</div>
         </div>
 
 
@@ -114,7 +124,7 @@
             </div>
             <div class="todo_item_3">
               <div class="todo_title">Next:</div>
-              <input class="todo_content_input" value="TBD"></input>
+              <input class="todo_content_input" value="Meeting with Vincent"></input>
             </div>
           </div>
           <div  ng-class="{
@@ -123,7 +133,7 @@
                 }"></div>
           <img  class="app_img" src="img/next.png" ng-click="expand_todo=!expand_todo;
                 expand_github=false; expand_bug=false; expand_video=false; expand_product=false; expand_calendar=false;"/>
-          <div  class="app_notification">2</div>
+          <div  class="app_notification" ng-show="thomas===true">3</div>
         </div>
 
 
@@ -138,7 +148,7 @@
                 }">
             <div class="webcam_container">
               <webcam></webcam>
-              <div class="call_bn">Call Thomas</div>
+              <div class="call_bn">Call Steve Jobs</div>
             </div>
             <div class="add_cam">+</div>
           </div>
@@ -195,14 +205,54 @@
         </div>
 
 
-        <div class="app_icon_medium">           
+        <div class="app_icon_add">           
           <img  class="app_img" src="img/add_link.png"/>
         </div>
 
   </div>
   
-  <div id="list_container" ng-click="expand_github=false; expand_bug=false; expand_todo=false;">
+  <div id="list_container" ng-show="steve==true">
+    <div class="dialog_person">@Steve Jobs</div>
+
+    <div class="time_line">
+      <div class="time_text">April 21 2015</div>
+    </div>
+
+    <div class="one_dialog">
+      <div class="dialog_from">Thomas Sun</div>
+      <div class="dialog_time">10:45AM</div>
+      <div class="dialog_content">Hi Steve, how's it going up there?</div>
+    </div>
+
+    <div class="one_dialog">
+      <div class="dialog_from">Steve Jobs</div>
+      <div class="dialog_time">10:46AM</div>
+      <div class="dialog_content">Seting up iCloud...</div>
+    </div>
+
+    <div class="time_line">
+      <div class="time_text">April 23 2015</div>
+    </div>
+
+    <div class="one_dialog">
+      <div class="dialog_from">Thomas Sun</div>
+      <div class="dialog_time">3:05PM</div>
+      <div class="dialog_content">What do you think iPhone-6 uses 5.5-inch screen?</div>
+    </div>
+
+    <div class="one_dialog">
+      <div class="dialog_from">Steve Jobs</div>
+      <div class="dialog_time">3:08PM</div>
+      <div class="dialog_content">Jony son of b...</div>
+    </div>
   </div>
+
+  <div id="list_container" ng-show="thomas==true">
+    <div class="dialog_person">@Thomas Sun</div>
+    <div class="time_line">
+      <div class="time_text">April 21 2015</div>
+    </div>
+  </div> 
 
   <div class="search_container">
     <img class="search_img" src="img/search.png"/>
