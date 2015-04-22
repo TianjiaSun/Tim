@@ -1562,9 +1562,9 @@ width: 320px;
 height: 240px;
 overflow: hidden;
 border-style: solid;
-border-width: 2px;
+border-width: 1px;
 border-color: rgb(51,176,240);
-box-shadow: 0 0 5px 0px rgb(53, 53, 53);
+box-shadow: 0 0 4px gray;
 }
 
 .webcame-live {
@@ -1572,9 +1572,43 @@ box-shadow: 0 0 5px 0px rgb(53, 53, 53);
 }
 
 .call_bn {
+position: absolute;
+top: 205px;
+left: 7px;
+width: 302px;
+background: rgba(51,176,240,0.5);
+text-align: center;
+font-family: arial;
+font-size: 15px;
+color: white;
+height: 24px;
+line-height: 24px;
+}
 
+.call_bn:hover {
+cursor: pointer;
 }
 
 .add_cam {
-
+position: absolute;
+top: 10px;
+left: 338px;
+width: 52px;
+height: 240px;
+border-top-right-radius: 8px;
+border-bottom-right-radius: 8px;
+box-shadow: 0 0 4px gray;
+background: rgb(238,238,238);
+background: -moz-linear-gradient(-45deg, rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%);
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(204,204,204,1)));
+background: -webkit-linear-gradient(-45deg, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+background: linear-gradient(135deg, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=1 );
+line-height: 240px;
+font-family: arial;
+font-size: 24px;
+color: rgb(51,176,240);
+font-weight: bold;
 }
