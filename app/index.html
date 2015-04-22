@@ -96,7 +96,27 @@
           <div  ng-class="{
                 'app_content': expand_todo===false, 
                 'app_content_active_300_200': expand_todo===true
-                }"></div>
+                }">
+            <div class="todo_person">Thomas's nexts</div>
+            <div class="todo_item_1">
+              <div class="todo_title">Next:</div>
+              <div class="todo_content">Discuss with Ruby on uniJS development</div>
+            </div>
+            <div class="insert">
+              <img class="insert_pic" src="img/insert.png"/>
+            </div>
+            <div class="todo_item_2">
+              <div class="todo_title">Next:</div>
+              <div class="todo_content">Develop E-Channel Services</div>
+            </div>
+            <div class="insert">
+              <img class="insert_pic" src="img/insert.png"/>
+            </div>
+            <div class="todo_item_3">
+              <div class="todo_title">Next:</div>
+              <input class="todo_content_input" value="TBD"></input>
+            </div>
+          </div>
           <div  ng-class="{
                 'app_handler': expand_todo===false, 
                 'app_handler_active': expand_todo===true
@@ -114,8 +134,12 @@
                 ng-init="expand_video=false;">
           <div  ng-class="{
                 'app_content': expand_video===false, 
-                'app_content_active_300_200': expand_video===true
-                }"></div>
+                'app_content_active_800_400': expand_video===true
+                }">
+            <div class="webcam_container">
+              <webcam></webcam>
+            </div>
+          </div>
           <div  ng-class="{
                 'app_handler': expand_video===false, 
                 'app_handler_active': expand_video===true
@@ -178,6 +202,8 @@
 
   <div class="notification_container" ng-mouseover="show_notifications=true;" ng-mouseleave="show_notifications=false;" ng-init="show_notifications=false;">
 
+    <div class="notification_date">Today</div>
+
     <div ng-class="{
                 'notification_unit': true,
                 'notification_1': show_notifications===false
@@ -190,13 +216,23 @@
                 'notification_unit': true,
                 'notification_2': show_notifications===false
                 }">
-      <img class="notification_app_icon" src="img/product.png"/>
-      <div class="notification_text">A new product is added by Jason</div>
+      <img class="notification_app_icon" src="img/github.png"/>
+      <div class="notification_text">New Commit by Eason: "add new function"</div>
     </div>
 
     <div ng-class="{
                 'notification_unit': true,
                 'notification_3': show_notifications===false
+                }">
+      <img class="notification_app_icon" src="img/bug.png"/>
+      <div class="notification_text">New Bug "Delete Bar fails to hide on IE"</div>
+    </div>
+
+    <div class="notification_date">Yesterday</div>
+
+    <div ng-class="{
+                'notification_unit': true,
+                'notification_4': show_notifications===false
                 }">
       <img class="notification_app_icon" src="img/github.png"/>
       <div class="notification_text">New Commit by Eason: "change UI style"</div>
@@ -204,18 +240,10 @@
 
     <div ng-class="{
                 'notification_unit': true,
-                'notification_4': show_notifications===false
-                }">
-      <img class="notification_app_icon" src="img/bug.png"/>
-      <div class="notification_text">New Bug "Delete Bar fails to hide on IE"</div>
-    </div>
-
-    <div ng-class="{
-                'notification_unit': true,
                 'notification_5': show_notifications===false
                 }">
-      <img class="notification_app_icon" src="img/github.png"/>
-      <div class="notification_text">New Commit by Eason: "add new function"</div>
+      <img class="notification_app_icon" src="img/product.png"/>
+      <div class="notification_text">A new product is added by Jason</div>
     </div>
 
     <div ng-class="{
@@ -240,6 +268,7 @@
   <script src="jquery-1.11.2.min.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="js/webcam.min.js"></script>
   <script src="js/controller.js"></script>
   <script src="js/display.js"></script>
   <script src="components/version/version.js"></script>

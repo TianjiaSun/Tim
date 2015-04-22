@@ -227,7 +227,7 @@ border-bottom-left-radius: 5px;
 
 .main_navigator_h2:hover {
 cursor: pointer;
-background: rgb(90, 90, 90);
+background: rgb(140, 140, 160);
 border-top-left-radius: 5px;
 border-bottom-left-radius: 5px;
 }
@@ -770,7 +770,7 @@ position: absolute;
 top: 0px;
 left: 130%;
 width: 300px;
-height: 200px;
+height: 174px;
 background: rgb(248, 248, 248);
 border-top-right-radius: 15px;
 border-bottom-right-radius: 15px;
@@ -797,6 +797,27 @@ border-top-right-radius: 15px;
 border-bottom-right-radius: 15px;
 border-bottom-left-radius: 15px;
 border-top-left-radius: 15px;
+box-shadow: 0px 0px 0px 1px rgb(190, 190, 190);
+opacity: 1;
+-webkit-transition: 0.2s ease-in-out;
+-moz-transition: 0.2s ease-in-out;
+-o-transition: 0.2s ease-in-out;
+transition: 0.2s ease-in-out;
+border-color: rgb(109, 109, 109);
+transition-delay: 0;
+}
+
+.app_content_active_800_400 {
+position: absolute;
+top: -178px;
+left: 130%;
+width: 800px;
+height: 400px;
+background: rgb(248, 248, 248);
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+border-bottom-left-radius: 15px;
+/* border-top-left-radius: 15px; */
 box-shadow: 0px 0px 0px 1px rgb(190, 190, 190);
 opacity: 1;
 -webkit-transition: 0.2s ease-in-out;
@@ -1223,6 +1244,7 @@ left: 42px;
 width: 200px;
 height: 200px;
 background: transparent;
+box-shadow: 0 0 3px gray;
 }
 
 .bug_input {
@@ -1276,7 +1298,7 @@ box-shadow: 0 0 2px black;
 
 .notification_container {
 position: absolute;
-top: 100px;
+top: 110px;
 right: 46px;
 width: 223px;
 height: calc(100% - 300px);
@@ -1369,4 +1391,174 @@ opacity: 0.5;
 
 .notification_6 {
 opacity: 0.4;
+}
+
+.notification_date {
+position: relative;
+top: 3px;
+left: 14px;
+width: 191px;
+height: 12px;
+margin-bottom: 6px;
+background: transparent;
+-webkit-transition: 0.3s ease-in-out;
+-moz-transition: 0.3s ease-in-out;
+-o-transition: 0.3s ease-in-out;
+transition: 0.3s ease-in-out;
+color: rgb(163, 163, 163);
+font-size: 13px;
+}
+
+.todo_item_1 {
+position: relative;
+top: 5px;
+left: 5px;
+border-top-right-radius: 10px;
+width: calc(100% - 10px);
+height: 44px;
+margin-bottom: 5px;
+background: rgb(69,136,160); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(69,136,160,1) 0%, rgba(100,161,186,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(69,136,160,1)), color-stop(100%,rgba(100,161,186,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  rgba(69,136,160,1) 0%,rgba(100,161,186,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  rgba(69,136,160,1) 0%,rgba(100,161,186,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  rgba(69,136,160,1) 0%,rgba(100,161,186,1) 100%); /* IE10+ */
+background: linear-gradient(135deg,  rgba(69,136,160,1) 0%,rgba(100,161,186,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4588a0', endColorstr='#64a1ba',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+-webkit-transition: 0.3s ease-in-out;
+-moz-transition: 0.3s ease-in-out;
+-o-transition: 0.3s ease-in-out;
+transition: 0.3s ease-in-out;
+color: rgb(73, 73, 73);
+}
+
+.todo_item_2 {
+position: relative;
+top: 5px;
+left: 5px;
+width: calc(100% - 10px);
+height: 44px;
+margin-bottom: 5px;
+background: rgb(69,136,160); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(69,136,160,1) 0%, rgba(100,161,186,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(69,136,160,1)), color-stop(100%,rgba(100,161,186,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  rgba(69,136,160,1) 0%,rgba(100,161,186,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  rgba(69,136,160,1) 0%,rgba(100,161,186,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  rgba(69,136,160,1) 0%,rgba(100,161,186,1) 100%); /* IE10+ */
+background: linear-gradient(135deg,  rgba(69,136,160,1) 0%,rgba(100,161,186,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4588a0', endColorstr='#64a1ba',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+-webkit-transition: 0.3s ease-in-out;
+-moz-transition: 0.3s ease-in-out;
+-o-transition: 0.3s ease-in-out;
+transition: 0.3s ease-in-out;
+color: rgb(73, 73, 73);
+opacity: 0.8;
+}
+
+.todo_item_3 {
+position: relative;
+top: 5px;
+left: 5px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+width: calc(100% - 10px);
+height: 44px;
+margin-bottom: 5px;
+background: rgb(69,136,160); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(69,136,160,1) 0%, rgba(100,161,186,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(69,136,160,1)), color-stop(100%,rgba(100,161,186,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  rgba(69,136,160,1) 0%,rgba(100,161,186,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  rgba(69,136,160,1) 0%,rgba(100,161,186,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  rgba(69,136,160,1) 0%,rgba(100,161,186,1) 100%); /* IE10+ */
+background: linear-gradient(135deg,  rgba(69,136,160,1) 0%,rgba(100,161,186,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4588a0', endColorstr='#64a1ba',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+-webkit-transition: 0.3s ease-in-out;
+-moz-transition: 0.3s ease-in-out;
+-o-transition: 0.3s ease-in-out;
+transition: 0.3s ease-in-out;
+color: rgb(73, 73, 73);
+opacity: 0.6;
+}
+
+.todo_title {
+position: absolute;
+top: 2px;
+left: 4px;
+font-family: arial;
+font-size: 12px;
+color: white;
+}
+
+.todo_content {
+position: absolute;
+top: 20px;
+left: 20px;
+width: calc(100% - 16px);
+height: 20px;
+font-family: arial;
+font-size: 13px;
+color: white;
+}
+
+.todo_person {
+position: relative;
+top: 3px;
+left: 5px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+width: calc(100% - 10px);
+height: 16px;
+margin-bottom: 5px;
+}
+
+.insert {
+position: relative;
+top: -17px;
+right: 43px;
+float: right;
+height: 0px;
+width: 0px;
+z-index: 1;
+}
+
+.insert_pic {
+position: absolute;
+top: 0px;
+left: 0px;
+width: 40px;
+height: 40px;
+z-index: 1;
+}
+
+.insert_pic:hover {
+cursor: pointer;
+}
+
+.todo_content_input {
+position: absolute;
+top: 20px;
+left: 20px;
+width: calc(100% - 25px);
+height: 20px;
+font-family: arial;
+font-size: 13px;
+color: white;
+border-style: none;
+outline: none;
+background: transparent;
+}
+
+.webcam_container {
+position: absolute;
+top: 10px;
+left: 10px;
+width: 506px;
+height: 380px;
+overflow: hidden;
 }

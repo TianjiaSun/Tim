@@ -1,6 +1,6 @@
 'use strict';
 
-var store = angular.module('store',['ngRoute'])
+var store = angular.module('store',['ngRoute','webcam'])
   .controller('StoreListCtrl', function($scope, $http, $route, $routeParams, $sce, $timeout) {
 
   $scope.header = "Recommended";
